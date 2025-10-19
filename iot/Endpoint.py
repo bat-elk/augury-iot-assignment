@@ -14,6 +14,7 @@ class Endpoint:
         self.hardware_type = hardware_type   # Hardware family (e.g., moxa)
         self.version = version               # Firmware version
         self.battery_mA = battery_mA         # Current battery level (mA)
+        self.backlog = 0                     # for the test part
 
     def battery_threshold(self):
         """Return the battery threshold for this Endpoint type."""
@@ -32,3 +33,7 @@ class Endpoint:
             return True
         except Exception:
             return False
+        
+    def has_backlog(self):
+        """Return if there is a backlog """
+        return self.backlog > 0

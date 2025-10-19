@@ -1,0 +1,19 @@
+gitignore_content = """# Python cache
+__pycache__/
+*.pyc
+
+# Virtual env
+.venv/
+
+# Robot outputs (generated each run)
+output.xml
+log.html
+report.html
+out/
+
+# VS Code
+.vscode/
+
+# Windows / misc
+Thumbs.db
+"""
