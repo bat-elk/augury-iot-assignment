@@ -1,1 +1,5 @@
-robotframework==4.1.3
+# For Python < 3.8 use RF 4.x (works with 3.6–3.7)
+robotframework==4.1.3; python_version < "3.8"
+
+# For Python >= 3.8 use RF 6.x–7.x (works with 3.8–3.12+)
+robotframework>=6,<8; python_version >= "3.8"

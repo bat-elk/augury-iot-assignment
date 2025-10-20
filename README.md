@@ -18,7 +18,6 @@ augury-iot-assignment/
 
 ## Requirements
 - **Python 3.6+**  
-  (This repo is pinned to `robotframework==4.1.3`, which supports Python 3.6.)
 - `pip`, `venv`
 - (Optional) VS Code
 
@@ -32,10 +31,11 @@ py -m venv .venv
 source .venv/Scripts/activate
 
 ### 2) Ensure pip is available inside the venv (Python 3.6 tip)
-python -m ensurepip --upgrade
+py -m ensurepip --upgrade
 
 ### 3) Install dependencies (from this repo’s pinned requirements)
-pip install -r requirements.txt    # installs: robotframework==4.1.3
+pip install -r requirements.txt
+   # installs: robotframework==4.1.3
 
 ### 4) Run the whole suite
-python -m robot -P . tests/
+py -m robot -P . tests/
